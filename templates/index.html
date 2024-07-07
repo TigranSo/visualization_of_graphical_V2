@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+    <div id="map">
+    
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Изображение" style="width: 100%;"><br><br>
+            <div id="nestedElements">
+               
+            </div>
+        </div>
+    </div>
+
+    <div id="nestedModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeNestedModal()">&times;</span>
+            <img id="nestedModalImage" src="" alt="Дополнительное изображение" style="width: 100%;">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
+{% endblock %}
